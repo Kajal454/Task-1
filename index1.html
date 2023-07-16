@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <h1><center><b>Registration Form</b></center></h1>
+    <form aciton ="/myaction.php" name="myForm" onsubmit="return validateForm()" method="post">
+        <div class="formdesign" id="name"><center><b>Name: <input type="text" name="fname" required><b><span class="formerror"> </span></b></b></center>
+            <!-- Name: <input type="text" name="fname" required><b><span class="formerror"> </span></b> -->
+        </div>
+
+        <div class="formdesign" id="email"><center><b>Email: <input type="email" name="femail" required><b><span class="formerror"> </span></b></b></center>
+            
+        </div>
+
+        <div class="formdesign" id="phone"><center><b> Phone: <input type="phone" name="fphone" required><b><span class="formerror"></span></b></b></center>
+           
+        </div>
+
+        <div class="formdesign" id="pass"><center><b>Password: <input type="password" name="fpass" required><b><span class="formerror"</span></b>
+        </b></center>
+      </div>
+
+        <div class="formdesign" id="cpass"><center><b>Confirm Password: <input type="password" name="fcpass" required><b><span class="formerror"></span></b></b></center>
+            
+        </div>
+
+       <div><center><b> <input   class="but" type="submit" value="Submit" ></b></center></div>
+
+
+    </form>
+</body>
+<script src="index.js"></script>
+
+
+</html>
